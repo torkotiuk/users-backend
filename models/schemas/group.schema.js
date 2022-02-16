@@ -1,17 +1,15 @@
 const { Schema } = require('mongoose');
 
-const userSchema = Schema(
+const groupSchema = Schema(
   {
     name: {
       type: String,
       required: true,
-    },
-    groupId: {
-      type: Schema.Types.ObjectId,
-      ref: 'group',
+      unique: true,
+      minLength: [2, 'Name of group should be at least 2 characters'],
     },
   },
   { versionKey: false, timestamps: true },
 );
 
-module.exports = userSchema;
+module.exports = groupSchema;
