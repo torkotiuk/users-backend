@@ -3,6 +3,12 @@ const { users } = require('../controllers');
 const { groups } = require('../controllers');
 const router = Router();
 
+router.get('/', (_, res) => {
+  res.json({
+    message: 'Api is running...',
+  });
+});
+
 router.get('/api/users', users.getAll);
 router.post('/api/user', users.add);
 router.get('/api/user/:userId', users.getById);
