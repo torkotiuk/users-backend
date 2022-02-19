@@ -5,7 +5,17 @@ const router = Router();
 
 router.get('/', (_, res) => {
   res.json({
-    message: 'Api is running...',
+    allUsers: 'https://contacts-1234.herokuapp.com/api/users',
+    userAdd: 'https://contacts-1234.herokuapp.com/api/user',
+    userGet: 'https://contacts-1234.herokuapp.com/api/user/USER_ID',
+    userPut: 'https://contacts-1234.herokuapp.com/api/user/USER_ID',
+    userDelete: 'https://contacts-1234.herokuapp.com/api/user/USER_ID',
+    freeLine: '',
+    allGroups: 'https://contacts-1234.herokuapp.com/api/grouos',
+    groupAdd: 'https://contacts-1234.herokuapp.com/api/group',
+    groupGet: 'https://contacts-1234.herokuapp.com/api/group/USER_ID',
+    groupPut: 'https://contacts-1234.herokuapp.com/api/group/USER_ID',
+    groupDelete: 'https://contacts-1234.herokuapp.com/api/group/USER_ID',
   });
 });
 
