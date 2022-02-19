@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./bin/server-starts.js",
+    "start": "node ./bin/server-starts.js",
     "start:dev": "nodemon ./bin/server-starts.js"
   },
   "dependencies": {
