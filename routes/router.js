@@ -11,7 +11,7 @@ router.get('/', (_, res) => {
     userPut: 'https://contacts-1234.herokuapp.com/api/user/USER_ID',
     userDelete: 'https://contacts-1234.herokuapp.com/api/user/USER_ID',
     freeLine: '',
-    allGroups: 'https://contacts-1234.herokuapp.com/api/grouos',
+    allGroups: 'https://contacts-1234.herokuapp.com/api/groups',
     groupAdd: 'https://contacts-1234.herokuapp.com/api/group',
     groupGet: 'https://contacts-1234.herokuapp.com/api/group/USER_ID',
     groupPut: 'https://contacts-1234.herokuapp.com/api/group/USER_ID',
